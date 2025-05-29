@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.about-section h2 {
+  text-align: center;
+  margin-top: 40px;
+}
+.about-section h5{
+    text-align: center;
+
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.container > div {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.container h6 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.fa-solid,
+.fa-regular {
+  margin-top: 50px;
+}
+
+.service-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.service-section h2,
+.service-section h6 {
+  text-align: center;
+}
+
+.service-section h2 {
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 0.5rem;
+}
+
+.service-section h6 {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 2rem;
+}
+
+.design {
+  background-color: rgb(209, 209, 209);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.last-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.text-side {
+  max-width: 500px;
+  width: 100%;
+  padding: 10px;
+}
+
+.text-side h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.text-side p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.text-side .btn {
+    background-color: #222;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.text-side .btn:hover {
+  background-color: #444;
+}
+
+.imageview {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.imageview img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .last-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    text-align: left;
+  }
+
+  .text-side,
+  .imageview {
+    flex: 1;
+  }
+
+  .text-side {
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .design {
+    padding: 40px;
+  }
+
+  .text-side h3 {
+    font-size: 2.2rem;
+  }
+
+  .text-side p {
+    font-size: 1.1rem;
+  }
+}
